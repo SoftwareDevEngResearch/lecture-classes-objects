@@ -1,29 +1,29 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
                 <title>Software Development for Engineering Research - Classes and Objects</title>
 
                 <meta name="description" content="
                 Lecture on classes and objects for ME 599: Software Development for Engineering Research
                 ">
-		<meta name="author" content="Kyle Niemeyer">
+    <meta name="author" content="Kyle Niemeyer">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
 			if( window.location.search.match( /print-pdf/gi ) ) {
 				var link = document.createElement( 'link' );
 				link.rel = 'stylesheet';
@@ -157,10 +157,10 @@
                         <h3>What about classes?</h3><br>
                         <p class="fragment">
                             Classes define logical collections of attributes and methods describing a kind of object,
-                            and how to create an objects of that kind.
+                            and how to create objects of that kind.
                         </p>
                         <p class="fragment">
-                            Chose classes to encapsulate internal data and functions for different types of objects.
+                            Choose classes to encapsulate internal data and functions for different types of objects.
                         </p>
                     </section>
                     <section>
@@ -213,6 +213,7 @@
                         <br>
                         <p class="fragment">Data with different values for each instance of the class</p>
                         <p class="fragment">Example: particle position.</p>
+                        <div style="font-size:30px">
                         <pre><code data-trim class="fragment python">
                             import particle as p
                             # create empty list to hold observed particle data
@@ -228,6 +229,7 @@
                             print(obs[0].r)
                             print(obs[1].r)
                         </code></pre>
+												</div>
                     </section>
                     <section>
                         <p class="fragment">Using instance variables, we can store all data associated with a particle
